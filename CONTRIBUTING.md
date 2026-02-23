@@ -46,23 +46,6 @@ $ ./ci/scripts/build.sh test linux amd64
 
 This will produce a shared library in `src/build`.
 
-To run the validation suite, you will first need to build the shared library.
-You will also need to set up a SingleStore instance (see [the validation
-README](./src/validation/README.md)).  Finally, from the `src/` subdirectory:
-
-```shell
-$ pixi run validate
-```
-
-This will produce a test report, which can be rendered into a documentation
-page (using MyST Markdown):
-
-```shell
-$ pixi run gendocs --output generated/
-```
-
-Then look at `./generated/singlestore.md`.
-
 ## Opening a Pull Request
 
 Before opening a pull request:
